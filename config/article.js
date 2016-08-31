@@ -9,23 +9,22 @@ export default _ => ({ // eslint-disable-line
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2016-09-02T03:00:00Z'),
 
-  headline: 'Politics and the English Language',
+  headline: 'Is urban cycling worth the risk?',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: '',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'Life & Arts',
+    url: '/life-arts',
   },
 
-  relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
-  },
+  // relatedArticle: {
+  //   text: 'Related article »',
+  //   url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+  // },
 
   mainImage: {
     title: '',
@@ -37,13 +36,13 @@ export default _ => ({ // eslint-disable-line
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
-  byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
-  ],
+  // byline: [
+    // { name: 'Author One', url: '/foo/bar' },
+    // { name: 'Author Two' },
+  // ],
 
   // Appears in the HTML <title>
-  title: '',
+  title: 'Is urban cycling worth the risk?',
 
   // meta data
   description: '',
@@ -55,7 +54,7 @@ export default _ => ({ // eslint-disable-line
         Twitter card docs:
         https://dev.twitter.com/cards/markup
   */
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 
   /*
   TODO: Do you want to tweak any of the

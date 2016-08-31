@@ -1,16 +1,155 @@
 @import 'o-colors/main';
 @import 'components/core/main';
 
-/*
-      TODO: delete this comment
+html, body {
+	height: 100%;
+    margin: 0;
+    width: 100%;
+    font-size:18px;
+}
 
-      Write your code here - keep it neat!
-      Split logical parts of you project into components e.g.
+h2{
+	max-width: 620px;
+	width:100%;
+}
 
-      /client
-        - /components
-            - /component-name
-                - styles.scss
-                - index.js
-                - template.html
-*/
+.responsive-image{
+	width:100vw;
+	height:50vw;
+	background-image:url('/assets/header-landscape.png');
+	background-size:contain;
+	background-position:50% 50%;
+	background-repeat: no-repeat;
+	@media screen and (max-width: 768px) {
+    	background-image:url('/assets/header-portrait.png');
+		height:107vw;
+  	}
+	@media screen and (max-width: 500px) {
+    	background-image:url('/assets/header-small.png');
+  	}
+}
+
+article p:nth-of-type(1)::first-letter { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; }
+
+article p{
+	text-align: left;
+    margin: 12px 0;
+}
+
+.article__byline a{
+	color:#9e2f50;
+	border-bottom:none;
+}
+
+.subhead.subhead--crosshead {
+    border-bottom: 1px solid #000;
+    margin: 1em auto 12px;
+}
+
+.story-fact-card-holder {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 40%;
+    margin: 0!important;
+    @media (max-width: 800px){
+	    width: inherit;
+	}
+	&.left{
+    	float: left;
+	}
+}
+
+.story-fact-card {
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 #cec6b9;
+    zoom: 1;
+    background-color: #fff;
+    overflow: hidden;
+    width: 260px;
+    display: inline-block;
+    &.left{
+    	float:right;
+    }
+}
+
+.story-fact-words {
+	font-family: MetricWeb,sans-serif;
+    color: #777;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
+    float: right;
+    width: 140px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    clear: right;
+}
+
+.animation {
+	margin: 5px 0 5px 10px;
+	width:5em;
+	height:5em;
+	display: inline-block;
+	background-size: cover;
+    background-position-x: 0;
+}
+
+.animation#one{
+	background-image:url('/assets/cyclist1.png');
+    -webkit-animation: loop .4s steps(3) infinite;
+    animation: loop .4s steps(3) infinite;
+}
+
+.animation#two{
+	background-image:url('/assets/cyclist2.png');
+    -webkit-animation: loop2 .4s steps(3) infinite;
+    animation: loop2 .4s steps(3) infinite;
+}
+
+@keyframes loop{
+	0%{background-position:0 0}
+	100%{background-position:105% 0}
+}
+
+@keyframes loop2{
+	0%{background-position:0 0}
+	100%{background-position:103% 0}
+}
+
+#pollution-london{
+	width:calc(100vw - 20px);
+	height:calc(62.5vw - 12.5px);
+	max-width:1000px;
+	max-height:625px;
+	background-image:url('/assets/pollution-london-large.png');
+	background-size:contain;
+	background-position:50% 50%;
+	background-repeat: no-repeat;
+	@media screen and (max-width: 768px) {
+		background-image:url('/assets/pollution-london-small.png'); 
+		width:calc(100vw - 20p);
+		height:calc(80vw - 16px);
+		max-width:auto;
+		max-height:auto;
+  	}
+}
+
+#pollution-world{
+	width:calc(100vw - 20px);
+	height:calc(75vw - 15px);
+	max-width:1000px;
+	max-height:750px;
+	background-image:url('/assets/pollution-world-large.png');
+	background-size:contain;
+	background-position:50% 50%;
+	background-repeat: no-repeat;
+	@media screen and (max-width: 768px) {
+		background-image:url('/assets/pollution-world-small.png'); 
+		width:calc(100vw - 20px);
+		height:calc(100vw - 20px);
+		max-width:auto;
+		max-height:auto;
+  	}
+}

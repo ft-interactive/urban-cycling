@@ -13,19 +13,44 @@ h2{
 	width:100%;
 }
 
-.responsive-image{
-	width:100vw;
-	height:50vw;
-	background-image:url('/assets/header-landscape.png');
-	background-size:contain;
-	background-position:50% 50%;
-	background-repeat: no-repeat;
+sup{
+	top: auto!important;
+}
+
+figcaption{
+	max-width: 600px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.yuge{
+	max-width: 1200px;
+	margin: 0 auto;
 	@media screen and (max-width: 768px) {
-    	background-image:url('/assets/header-portrait.png');
-		height:107vw;
+    	display: none!important;
+  	}
+	
+}
+.large{
+	max-width: 900px;
+	margin: 0 auto;
+	@media screen and (max-width: 768px) {
+    	display: none!important;
+  	}
+}
+.medium{
+	display: none!important;
+	@media screen and (max-width: 768px) {
+    	display: block!important;
   	}
 	@media screen and (max-width: 500px) {
-    	background-image:url('/assets/header-small.png');
+    	display: none!important;
+  	}
+}
+.small{
+	display: none!important;
+	@media screen and (max-width: 500px) {
+    	display: block!important;
   	}
 }
 
@@ -118,38 +143,85 @@ article p{
 	100%{background-position:103% 0}
 }
 
-#pollution-london{
-	width:calc(100vw - 20px);
-	height:calc(62.5vw - 12.5px);
-	max-width:1000px;
-	max-height:625px;
-	background-image:url('/assets/pollution-london-large.png');
-	background-size:contain;
-	background-position:50% 50%;
-	background-repeat: no-repeat;
-	@media screen and (max-width: 768px) {
-		background-image:url('/assets/pollution-london-small.png'); 
-		width:calc(100vw - 20p);
-		height:calc(80vw - 16px);
-		max-width:auto;
-		max-height:auto;
-  	}
+#backdrop{fill:#fff1e0;}
+text{cursor:default;font-size:12px;}
+.tick text,.hard.tick{font-size:14px;fill:#74736c;}
+.axis path{fill:none;stroke:#74736c;stroke-width:1px;shape-rendering:crispEdges;}
+.tick line{stroke:#74736c;shape-rendering:crispEdges;}
+.title{font-size:16px;fill:#43423e;font-weight:500;}
+.axisTitle{font-size:12px;fill:#74736c;}
+.plotTitle{font-size:14px;fill:#74736c;}
+.chartTitle{font-size:26px;}
+.chartSubTitle{font-size:16.5px;fill:#74736c;}
+.footnote{font-size:13px;fill:#74736c;}
+.annotation{font-size:12px;fill:#74736c;}
+.chartOverlay{font-size:12px;font-weight:bold;fill:#9d9d98;text-shadow:3px 3px 2px #FFF1E0, -3px -3px 2px #FFF1E0, -3px 3px 2px #FFF1E0, 3px -3px 2px #FFF1E0, -3px 0px 2px #FFF1E0, 3px 0px 2px #FFF1E0;}
+.shadow{text-shadow:3px 3px 2px #FFF1E0, -3px -3px 2px #FFF1E0, -3px 3px 2px #FFF1E0, 3px -3px 2px #FFF1E0, -3px 0px 2px #FFF1E0, 3px 0px 2px #FFF1E0;text-rendering:geometricPrecision;}
+.light{fill:#D7CEC0;font-weight:bold;font-size:18px;}
+.curved{font-size:16px;fill:#74736c;opacity:0.7;}
+.legend text{font-size:16px;}
+.anno text{font-size:13px;}
+g.axis path.domain{stroke:none;}
+g.x.axis .tick text{text-anchor:start!important;}
+
+.calc-holder{
+	padding:10px;
+	width:100vw;
+	max-width:900px;
 }
 
-#pollution-world{
-	width:calc(100vw - 20px);
-	height:calc(75vw - 15px);
-	max-width:1000px;
-	max-height:750px;
-	background-image:url('/assets/pollution-world-large.png');
-	background-size:contain;
-	background-position:50% 50%;
-	background-repeat: no-repeat;
-	@media screen and (max-width: 768px) {
-		background-image:url('/assets/pollution-world-small.png'); 
-		width:calc(100vw - 20px);
-		height:calc(100vw - 20px);
-		max-width:auto;
-		max-height:auto;
-  	}
+.input-holder{
+	max-width: 625px;
+	margin: 1em auto;
+    padding: 0 0.75em;
+}
+
+.calc-holder{
+	input{
+		padding: 10px 0;
+		text-align:right;
+		margin-right: 10px;
+	}
+	button{
+		padding: 10px;
+		border-radius: 10px;	
+	}
+}
+
+#drawCurve{
+	position: relative;
+      background-color: #9b164f;
+      text-align: left;
+      margin-right: 12px;
+      font-size: 1.05rem;
+      font-weight: 400;
+      padding-left: 16px;
+      padding-right: 26px;
+      box-sizing: border-box;
+      color: #fff;
+      border-radius: 4px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      border: none;
+      &:after {
+        content: " ";
+        background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr') no-repeat center center;
+        background-size: 16px 16px;
+        position: absolute;
+        bottom: 2.5px;
+        right: 0px;
+        width: 16px;
+        height: 16px;
+        margin: 0 7px 8px 0;
+      }
+    }
+
+#calculator{
+	margin-top:1em;
+	width:100%;
+	height:100%;
+}
+
+#results{
+	display:none;
 }

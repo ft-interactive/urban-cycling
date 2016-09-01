@@ -17,8 +17,8 @@ export default _ => ({ // eslint-disable-line
   summary: '',
 
   topic: {
-    name: 'Life & Arts',
-    url: '/life-arts',
+    name: 'FT Magazine',
+    url: '/magazine',
   },
 
   // relatedArticle: {

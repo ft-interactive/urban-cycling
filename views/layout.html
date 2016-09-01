@@ -60,9 +60,12 @@
       {% include "includes/footer.html" %}
     {% endif %}
     <script async>queue('https://origami-build.ft.com/v2/bundles/js?export=oFooter&modules=o-footer@^5.0.1', null, true)</script>
-
-    <script async>
-    queue([
+    <script src="https://origami-build.ft.com/v2/bundles/js?export=oShare&modules=o-share@^2"></script>
+    <script src="d3.min.js" charset="utf-8"></script>
+    <script src="d3-jetpack.js"></script>
+    <script src="queue.js"></script>
+    <script src="index.js"></script>
+    <script async>queue([
       'index.js',
       'https://origami-build.ft.com/v2/bundles/js?export=oDate&modules=o-date@^2.6.0',
       {% if scripts %}{% for script in scripts %}

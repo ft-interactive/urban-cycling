@@ -1,7 +1,7 @@
 export default _ => ({ // eslint-disable-line
 
   // link file UUID
-  id: '',
+  id: '76e4b03e-7071-11e6-a0c9-1365ce54b926',
 
   // canonical URL of the published page
   // https://ig.ft.com/sites/urban-cycling get filled in by the ./configure script
@@ -18,7 +18,7 @@ export default _ => ({ // eslint-disable-line
 
   topic: {
     name: 'FT Magazine',
-    url: '/magazine',
+    url: 'https://www.ft.com/magazine',
   },
 
   // relatedArticle: {
@@ -27,9 +27,9 @@ export default _ => ({ // eslint-disable-line
   // },
 
   mainImage: {
-    title: '',
+    title: 'Is urban cycling worth the risk?',
     description: '',
-    url: '',
+    url: 'https://ig.ft.com/sites/urban-cycling/assets/header-landscape.png',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
   },
@@ -45,7 +45,7 @@ export default _ => ({ // eslint-disable-line
   title: 'Is urban cycling worth the risk?',
 
   // meta data
-  description: '',
+  description: 'How do the benefits of exercise compare to the harm from pollution?',
 
   /*
   TODO: Select Twitter card type -
@@ -61,19 +61,19 @@ export default _ => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  // socialImage: '',
-  // socialHeadline: '',
-  // socialSummary:  '',
+  socialImage: 'https://ig.ft.com/sites/urban-cycling/assets/header-landscape.png',
+  socialHeadline: 'Is urban cycling worth the risk?',
+  socialSummary:  'How do the benefits of exercise compare to the harm from pollution?',
 
   // TWITTER
   // twitterImage: '',
   // twitterCreator: '@individual's_account',
-  // tweetText:  '',
-  // twitterHeadline:  '',
+  tweetText:  'Urban cycling: the trade-off between exercise, safety and pollution',
+  // twitterHeadline:  'How do the benefits of exercise compare to the harm from pollution?',
 
   // FACEBOOK
   // facebookImage: '',
-  // facebookHeadline: '',
+  // facebookHeadline: 'How do the benefits of exercise compare to the harm from pollution?',
 
   onwardjourney: {
 

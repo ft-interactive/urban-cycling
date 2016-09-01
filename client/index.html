@@ -5,9 +5,9 @@
 
 <!-- <div class='responsive-image graphic'></div> -->
 <figure class="graphic">
-  <img class=yuge alt="" src="/assets/header-landscape.png"></img>
-  <img class=medium alt="" src="/assets/header-portrait.png"></img>
-  <img class=small alt="" src="/assets/header-small.png"></img>
+  <img class=yuge alt="" src="./assets/header-landscape.png"></img>
+  <img class=medium alt="" src="./assets/header-portrait.png"></img>
+  <img class=small alt="" src="./assets/header-small.png"></img>
     <figcaption class="o-typography-caption">
     Illustrations: <a class="o-typography-link" href="http://lucasvarela.blogspot.co.uk/">Lucas Varela</a>
   </figcaption>
@@ -19,7 +19,7 @@ You would be in the majority. In 2014, 64 per cent of people surveyed by the UK�
 
 Such experiences are important. But what do the data say? As cities grow busier, obesity levels rise and climate change becomes a more pressing concern, we asked the FT’s transport correspondent and two of our specialist data journalists to investigate the risks and benefits of commuting by bike in big cities, something all of them do regularly. Here they give us their verdict: is it worth it?
 
-<div class="o-grid-row sectionHeader">
+<div class="o-grid-row sectionHeader" id=safety-on-the-roads>
 	<h2 class='subhead subhead--crosshead'>Death and accidents</h2>
 	<span class="article__byline">by&nbsp;<a href="/foo/bar" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">Robert Wright</a>, FT transport correspondent</span>
 </div>
@@ -32,7 +32,7 @@ These steps are typical of the efforts under way across the industrialised world
 
 “What we know is that the single biggest thing which deters non-cyclists from cycling is the fear of being injured by a car or a lorry,” says Ben Plowden, a senior director of planning at TfL.
 
-<div class="story-fact-card-holder left" id=safety-on-the-roads>
+<div class="story-fact-card-holder left">
 	<div class="story-fact-card left">
 		<div class=animation id=two></div>
 		<span class="story-fact-words">A cyclist travelling for 30 minutes at 12mph burns 300 calories</span>
@@ -72,9 +72,9 @@ After examining the different levels of air pollution in thousands of cities in 
 
 <!-- <div class=graphic id='pollution-london'></div> -->
 <figure class="graphic">
-  <img class=large alt="" src="/assets/pollution-london-large.png"></img>
-  <img class=medium alt="" src="/assets/pollution-london-medium.png"></img>
-  <img class=small alt="" src="/assets/pollution-london-small.png"></img>
+  <img class=large alt="" src="./assets/pollution-london-large.png"></img>
+  <img class=medium alt="" src="./assets/pollution-london-medium.png"></img>
+  <img class=small alt="" src="./assets/pollution-london-small.png"></img>
     <!-- <figcaption class="o-typography-caption">
     Illustrations: <a class="o-typography-link" href="http://lucasvarela.blogspot.co.uk/">Lucas Varela</a> -->
   </figcaption>
@@ -86,9 +86,9 @@ This is not to say that air pollution is harmless, and indeed more needs to be d
 
 <!-- <div class=graphic id='pollution-world'></div> -->
 <figure class="graphic">
-  <img class=large alt="" src="/assets/pollution-world-large.png"></img>
-  <img class=medium alt="" src="/assets/pollution-world-medium.png"></img>
-  <img class=small alt="" src="/assets/pollution-world-small.png"></img>
+  <img class=large alt="" src="./assets/pollution-world-large.png"></img>
+  <img class=medium alt="" src="./assets/pollution-world-medium.png"></img>
+  <img class=small alt="" src="./assets/pollution-world-small.png"></img>
     <!-- <figcaption class="o-typography-caption">
     Illustrations: <a class="o-typography-link" href="http://lucasvarela.blogspot.co.uk/">Lucas Varela</a> -->
   </figcaption>
@@ -125,10 +125,9 @@ A steady run to work may be a more intense workout than a steady cycle – an 11
 	<div class="o-grid-row sectionHeader" id=pollution-calculator>
 		<h2 class='subhead subhead--crosshead'>How long could you cycle in your city before the negative impacts of pollution would outweigh the benefits of exercise?</h2>
 	</div>
-			<label for=userPollution>PM2.5 pollution level, in μg/m<sup>3</sup></label>
-			<input type=number min=0 max=217 value=25 id=userPollution></input>
-			<button id=drawCurve>Draw my curve</button>
-			<div id=results><br>I could cycle <span id=hours></span> before harm from pollution would outweigh the health benefits from exercise
+			<div>How would <span id=TheToA>the</span> PM2.5 pollution level of <input type=number min=0 max=217 value=15 id=userPollution></input> μg/m<sup>3</sup> <span id=city>in London</span> affect a cyclist&rsquo;s health?</div>
+			<button id=drawCurve>Draw the curve</button>
+			<div id=results><br>You could cycle <span id=hours></span> before harm from pollution would outweigh the health benefits from exercise
 			</div>
 	</div>
 	<div id=calculator></div>

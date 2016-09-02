@@ -214,7 +214,7 @@ gulp.task('build-pages', () => {
 // minifies all HTML, CSS and JS (dist & client => dist)
 gulp.task('html', () =>
   gulp.src('dist/**/*.html')
-    .pipe(inlineSource())
+    .pipe(inlineSource( {compress: false} ))
     .pipe(htmlmin({
       collapseWhitespace: true,
       processConditionalComments: true,

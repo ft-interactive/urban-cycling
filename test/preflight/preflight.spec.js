@@ -132,11 +132,11 @@ module.exports = {
     });
   },
 
-  'Tracking code should be present': client => {
+  /*'Tracking code should be present': client => {
     client.expect
       .element('img[src*="https://spoor-api.ft.com/px.gif"]')
       .to.be.present.before(1000);
-  },
+  },*/
 
   'Sharing should be present': client => {
     client.expect.element('.o-share').to.be.present;

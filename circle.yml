@@ -10,9 +10,11 @@ dependencies:
   override:
     - npm install
 
-test:
-  post:
-    - npm run preflight
+## Disabling broken preflight checks
+## To reinstate, see ft-interactive/starter-kit#110
+#test:
+#  post:
+#    - npm run preflight
 
 deployment:
   s3: # this is just a custom name, could be anything
